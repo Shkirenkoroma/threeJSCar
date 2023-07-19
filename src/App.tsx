@@ -3,7 +3,7 @@ import { useGLTF, Stage, PresentationControls } from "@react-three/drei";
 import './App.css'
 
 function Model(props:any) {
-  const { scene } = useGLTF("/bmw.glb");
+  const { scene } = useGLTF("./bmw.glb");
   return <primitive object={scene} {...props} />
 }
 
